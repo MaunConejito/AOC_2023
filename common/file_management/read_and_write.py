@@ -1,4 +1,4 @@
-from os import path, listdir
+from os import path, listdir, makedirs
 
 INPUT_REL_PATH = '..\\data\\input\\'
 OUTPUT_REL_PATH = '..\\data\\output\\'
@@ -18,5 +18,8 @@ def get_file_content(absolute_path: str) -> str:
         return file.read()
 
 def write_file(absolute_path: str, content: str) -> str:
+    directory = path.dirname(absolute_path)
+    if not path.exists(directory):
+        makedirs(directory)
     with open(absolute_path, 'w+') as file:
         return file.write(content)
