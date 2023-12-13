@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "03"
+version = "0.1.0"
+description = ""
+authors = ["Manuel Rammler <mrammler@scopeland.de>"]
+packages = [
+    {include = "src"},
+    {include = "file_management", from = "../../common"},
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
