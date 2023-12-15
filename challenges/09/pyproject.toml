@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "09"
+version = "0.1.0"
+description = ""
+authors = ["Manuel Rammler <mrammler@scopeland.de>"]
+packages = [
+    {include = "src"},
+    {include = "file_management", from = "../../common"},
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+attrs = "^23.1.0"
+numpy = "^1.26.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
