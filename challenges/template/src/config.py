@@ -1,1 +1,0 @@
-SCRIPT_PATH = __file__
