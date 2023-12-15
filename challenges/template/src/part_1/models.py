@@ -1,1 +1,1 @@
-from pydantic import BaseModel
+from attrs import define
