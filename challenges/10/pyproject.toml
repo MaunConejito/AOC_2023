@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "09"
+name = "10"
 version = "0.1.0"
 description = ""
 authors = ["Manuel Rammler <mrammler@scopeland.de>"]
@@ -13,7 +13,6 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.12"
 attrs = "^23.1.0"
-numpy = "^1.26.2"
 
 
 [build-system]
