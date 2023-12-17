@@ -6,6 +6,8 @@ authors = ["Manuel Rammler <mrammler@scopeland.de>"]
 packages = [
     {include = "src"},
     {include = "file_management", from = "../../common"},
+    {include = "part_1", from = "./src"},
+    {include = "Part_2", from = "./src"},
     ]
 
 [tool.poetry.dependencies]
